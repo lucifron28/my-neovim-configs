@@ -2,7 +2,7 @@ return {
   "LazyVim/LazyVim",
   opts = {
     colorscheme = function()
-      vim.cmd("colorscheme tokyonight") -- or any theme
+      vim.cmd("colorscheme onedark_dark") -- or any theme
       vim.cmd([[
         hi Normal guibg=NONE ctermbg=NONE
         hi NormalNC guibg=NONE ctermbg=NONE
@@ -20,5 +20,9 @@ return {
         end,
       })
     end,
+  },
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
   },
 }
